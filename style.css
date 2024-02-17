@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --font-family-padrao: 'Outfit', 'MontSerrat', 'Roboto', sans-serif;
+    --font-family-padrao-2: 'Roboto', 'MontSerrat', 'Outfit', sans-serif;
+
+    --font-size-Titulo: 85px;
+    --font-size-Text-Titulo: 32px;
+    --font-size-Text-Subititulo: 20px;
+
+    --font-color-titulo: #1C69DD;
+    --font-color-titulo-02: #9715C5;
+    --font-color-subtitulo: #434343;
+
+    --Background-Color-Page: #fff;
+    --Background-Color-Page-2: #FEC447;
+    --Background-Color-Page-3: #111111;
+    --Background-Color-Page-4: #F77260;
+    --Background-Color-Page-4: #15BE5D;
+
+    --color-logo-01: #9715C5;
+    --color-logo-02: #1C69DD;
+
+    /* 
+    Caso queira adicionar outras cores faca dessa forma:
+    --color-01: ; 
+    */
+
+}
+
+/* HEADER */
+
+
+
+
+/* MAIN */
+
+
+.main-home > div {
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+    transition: top 0.5s ease;
+}
+
+.main-home .content-page-1 { top: 0; background-color: var(--Background-Color-Page)}
+.main-home .content-page-2 { top: 100%; background-color: var(--Background-Color-Page-2)}
+.main-home .content-page-3 { top: 200%; background-color: var(--Background-Color-Page-3)}
+.main-home .content-page-4 { top: 300%; background-color: var(--Background-Color-Page-4)}
+.main-home .content-page-5 { top: 400%; background-color: var(--Background-Color-Page)}
+
+
+/* FOOTER */
