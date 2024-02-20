@@ -10,6 +10,7 @@
 :root {
     --font-family-padrao: 'Outfit', 'MontSerrat', 'Roboto', sans-serif;
     --font-family-padrao-2: 'Roboto', 'MontSerrat', 'Outfit', sans-serif;
+    --font-family-padrao-3: 'MontSerrat', 'Outfit', 'Roboto', sans-serif;
 
     --font-size-Titulo: 85px;
     --font-size-Text-Titulo: 32px;
@@ -29,6 +30,8 @@
     --color-logo-02: #1C69DD;
 
     --color-01: #000; 
+    --color-02: #EC9E40;
+    --color-03: #25D366;
 
     /* 
     Caso queira adicionar outras cores faca dessa forma:
@@ -104,16 +107,6 @@ header.header-home ul.nav-menu li a:hover {
     transition: all 2ms ease-out;
 }
 
-.row {
-    height: 60%;
-    padding: 20px;
-}
-
-.col-6,
-.col-4 {
-    padding: 20px;
-    height: 100%;
-}
 
 /* MAIN */
 
@@ -122,29 +115,118 @@ header.header-home ul.nav-menu li a:hover {
     position: absolute; 
     width: 100%;
     height: 100%;
-    z-index: 2;}
+    z-index: 2; 
+}
 
 .content-page-wrapper {
     display: flex;
     color: var(--color-01);
     justify-content: center;
     align-items: center;
-    height: 100vh;}
+    height: 100vh; 
+}
 
 .main-home .content-page-1 {  
-background-color: var(--Background-Color-Page);
-overflow-y: hidden; 
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-height: 100vh; 
-padding: 20px;
-z-index: 1;}
+    background-color: var(--Background-Color-Page);
+    overflow-y: hidden; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; 
+    padding: 20px;
+    z-index: 1; 
+}
+
 .main-home .content-page-2 { top: 100%; background-color: var(--Background-Color-Page-2); max-height: 1200px;}
 .main-home .content-page-3 { top: 200%; background-color: var(--Background-Color-Page-3); max-height: 1200px;}
 .main-home .content-page-4 { top: 300%; background-color: var(--Background-Color-Page-4); max-height: 1200px;}
 .main-home .content-page-5 { top: 400%; background-color: var(--Background-Color-Page); max-height: 400px;}
 
+.content-page-wrapper .row {
+    height: 60%;
+    font-size: var(--font-size-Text-Titulo);
+    font-family: var(--font-family-padrao-2); 
+}
+
+.content-page-wrapper .row #col-4-image,
+.content-page-wrapper #col-margin {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.content-page-wrapper #loading-pag {
+    position: absolute;
+    left: 5%;
+
+}
+
+.loading {
+    position:  absolute;
+    left: 5%;
+    margin: 100% 0 0 0;
+    width: 4px;
+    height: 90px;
+    border-radius: 10px;
+    border: 1px solid var(--color-01);
+    background-color: transparent;
+}
+
+
+.content-page-wrapper .container-col-margin button {
+    background-color: transparent;
+    padding: 5px 60px;
+    border-radius: 40px;
+    border: 1px solid var(--color-02);
+    font-family: var(--font-family-padrao-3);
+    font-size: var(--font-size-Text-Subititulo);
+    color: var(--color-01);
+    font-weight: normal;
+    margin: 0 30%;
+}
+
+.content-page-wrapper .row p{
+    padding: 20px 0;
+    font-size: var(--font-size-Text-Subititulo);
+    font-family: var(--font-family-padrao); 
+    color: var(--font-color-subtitulo); 
+}
+
+
+.content-page-wrapper .col-1,
+.content-page-wrapper .col-2,
+.content-page-wrapper .col-3,
+.content-page-wrapper .col-4,
+.content-page-wrapper .col-5,
+.content-page-wrapper .col-6,
+.content-page-wrapper .col-7,
+.content-page-wrapper .col-8,
+.content-page-wrapper .col-9,
+.content-page-wrapper .col-10,
+.content-page-wrapper .col-11,
+.content-page-wrapper .col-12 {
+    padding: 20px;
+    border: 1px solid red;
+    height: 100%;
+}
+
+#col-margin span:nth-child(1) { color: var(--color-logo-02); }
+#col-margin span:nth-child(2) { color: var(--color-logo-01); }
+
+.icon-whats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 85%;
+    left: 85%;
+    background-color: var(--color-03);
+    width: 75px; height: 75px;
+    border-radius: 100% 20% 100% 100%;
+    z-index: 9999;
+    font-size: 30px;
+    color: #fff;
+}
 
 /* FOOTER */
