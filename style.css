@@ -104,7 +104,16 @@ header.header-home ul.nav-menu li a:hover {
     transition: all 2ms ease-out;
 }
 
+.row {
+    height: 60%;
+    padding: 20px;
+}
 
+.col-6,
+.col-4 {
+    padding: 20px;
+    height: 100%;
+}
 
 /* MAIN */
 
