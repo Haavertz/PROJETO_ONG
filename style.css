@@ -21,8 +21,8 @@
     --font-color-subtitulo: #434343;
 
     --Background-Color-Page: #fff;
-    --Background-Color-Page-2: #FEC447;
-    --Background-Color-Page-3: #111111;
+    --Background-Color-Page-2: #9715C5;
+    --Background-Color-Page-3: #15BE5D;
     --Background-Color-Page-4: #F77260;
     --Background-Color-Page-4: #15BE5D;
 
@@ -141,7 +141,7 @@ header.header-home ul.nav-menu li a:hover {
 .main-home .content-page-2 { top: 100%; background-color: var(--Background-Color-Page-2); max-height: 1200px;}
 .main-home .content-page-3 { top: 200%; background-color: var(--Background-Color-Page-3); max-height: 1200px;}
 .main-home .content-page-4 { top: 300%; background-color: var(--Background-Color-Page-4); max-height: 1200px;}
-.main-home .content-page-5 { top: 400%; background-color: var(--Background-Color-Page); max-height: 400px;}
+
 
 .content-page-wrapper .row {
     height: 60%;
@@ -229,3 +229,73 @@ header.header-home ul.nav-menu li a:hover {
 }
 
 /* FOOTER */
+
+footer.footer-home {
+    z-index: 5;
+    background-color: whitesmoke;
+    color: #8859a1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 447%;
+    height: 300px;
+}
+
+footer.footer-home img{
+    height: 100px;
+    border-radius: 50px;
+}
+footer.footer-home div.container {
+    width: 100%;
+    display: flex;
+}
+
+footer.footer-home div.container div.pages h5 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer.footer-home div.container div.pages a{
+    font-size: 18px;
+}
+
+footer.footer-home div.container div.social h5 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer.footer-home div.container div.social {
+    height: 10px;
+    width: 10px;
+}
+
+footer.footer-home div.container div.social svg{
+    height: 25px;
+    width: 25px;
+    margin-right: 25px;
+    transition: all 0.2s ease-in-out;
+}
+
+footer.footer-home div.container div.social li:nth-child(1) svg:hover{
+    color: #D62976;
+    margin-bottom: 5px;
+}
+
+footer.footer-home div.container div.social li:nth-child(2) svg:hover{
+    color: #3B5998;
+    margin-bottom: 5px;
+}
+
+footer.footer-home div.container div.social li:nth-child(3) svg:hover{
+    color: #25D366;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 600px) {
+    footer.footer-home {
+
+        top: 450%;
+
+    }
+}
