@@ -12,7 +12,7 @@
     --font-family-padrao-2: 'Roboto', 'MontSerrat', 'Outfit', sans-serif;
     --font-family-padrao-3: 'MontSerrat', 'Outfit', 'Roboto', sans-serif;
 
-    --font-size-Titulo: 85px;
+    --font-size-Titulo: 70px;
     --font-size-Text-Titulo: 32px;
     --font-size-Text-Subititulo: 20px;
 
@@ -24,7 +24,9 @@
     --Background-Color-Page-2: #9715C5;
     --Background-Color-Page-3: #15BE5D;
     --Background-Color-Page-4: #F77260;
-    --Background-Color-Page-4: #15BE5D;
+    --Background-Color-Page-4: #1C69DD;
+
+
 
     --color-logo-01: #9715C5;
     --color-logo-02: #1C69DD;
@@ -32,6 +34,7 @@
     --color-01: #000; 
     --color-02: #EC9E40;
     --color-03: #25D366;
+    --color-04: #fff;
 
     /* 
     Caso queira adicionar outras cores faca dessa forma:
@@ -118,7 +121,7 @@ header.header-home ul.nav-menu li a:hover {
     z-index: 2; 
 }
 
-.content-page-wrapper {
+.main-home .content-page-wrapper {
     display: flex;
     color: var(--color-01);
     justify-content: center;
@@ -138,40 +141,65 @@ header.header-home ul.nav-menu li a:hover {
     z-index: 1; 
 }
 
-.main-home .content-page-2 { top: 100%; background-color: var(--Background-Color-Page-2); max-height: 1200px;}
-.main-home .content-page-3 { top: 200%; background-color: var(--Background-Color-Page-3); max-height: 1200px;}
-.main-home .content-page-4 { top: 300%; background-color: var(--Background-Color-Page-4); max-height: 1200px;}
+.main-home .content-page-2 { top: 100%; background-color: var(--Background-Color-Page-2); max-height: 1200px; overflow-x: hidden;}
+.main-home .content-page-3 { top: 200%; background-color: var(--Background-Color-Page-3); max-height: 1200px; overflow-x: hidden;}
+.main-home .content-page-4 { top: 300%; background-color: var(--Background-Color-Page-4); max-height: 1200px; overflow-x: hidden;}
 
+.main-home .title-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 40px 0 25px 0;
+}
 
-.content-page-wrapper .row {
+@media (max-width: 500px) {
+    .main-home .content-page-2 .title-page h1 {
+        font-size: 45px !important;
+    }
+    .main-home #page-wrapper-2 h2 {
+        font-size: 20px !important;
+        text-align: justify;
+        padding: 0 30px 0 30px;        
+    }
+}
+.main-home .content-2-texting {
+    font-size: var(--font-size-Text-Titulo);
+    color: var(--color-04);
+    font-family: var(--font-family-padrao);
+    font-weight: 800;
+}
+
+.main-home #page-wrapper-2 {margin-right: 0px; margin-left: 0px; padding-left: 0px; padding-right: 0px;}
+
+.main-home .title-page h1 {
+    font-size: var(--font-size-Titulo);
+    color: var(--color-04);
+    font-family: var(--font-family-padrao);
+    font-weight: bold;
+
+}
+
+.main-home .content-page-wrapper .row {
     height: 60%;
     font-size: var(--font-size-Text-Titulo);
     font-family: var(--font-family-padrao-2); 
 }
 
-.content-page-wrapper .row #col-4-image,
-.content-page-wrapper #col-margin {
+.main-home .content-page-wrapper .row #col-4-image,
+.main-home .content-page-wrapper #col-margin {
     display: flex;
     justify-content: center;
     align-items: center; 
 }
 
-.content-page-wrapper #loading-pag {
+.main-home .content-page-wrapper #loading-pag {
     position: absolute;
     left: 5%;
 
 }
 
-.loading {
-    position:  absolute;
-    left: 5%;
-    margin: 100% 0 0 0;
-    width: 4px;
-    height: 90px;
-    border-radius: 10px;
-    border: 1px solid var(--color-01);
-    background-color: transparent;
-}
+
 
 .button-doacao {width: 100%; display: flex; justify-content: center; align-items: center; padding: 50px 0 0;}
 .container-col-margin {width: 650px;}
