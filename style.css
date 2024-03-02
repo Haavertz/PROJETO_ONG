@@ -1,0 +1,309 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --font-family-padrao: 'Outfit', 'MontSerrat', 'Roboto', sans-serif;
+    --font-family-padrao-2: 'Roboto', 'MontSerrat', 'Outfit', sans-serif;
+    --font-family-padrao-3: 'MontSerrat', 'Outfit', 'Roboto', sans-serif;
+
+    --font-size-Titulo: 85px;
+    --font-size-Text-Titulo: 32px;
+    --font-size-Text-Subititulo: 20px;
+
+    --font-color-titulo: #1C69DD;
+    --font-color-titulo-02: #9715C5;
+    --font-color-subtitulo: #434343;
+
+    --Background-Color-Page: #fff;
+    --Background-Color-Page-2: #9715C5;
+    --Background-Color-Page-3: #15BE5D;
+    --Background-Color-Page-4: #F77260;
+    --Background-Color-Page-4: #15BE5D;
+
+    --color-logo-01: #9715C5;
+    --color-logo-02: #1C69DD;
+
+    --color-01: #000; 
+    --color-02: #EC9E40;
+    --color-03: #25D366;
+
+    /* 
+    Caso queira adicionar outras cores faca dessa forma:
+    --color-02: ; 
+    */
+
+}
+
+/* HEADER */
+header.header-home{
+    position: fixed;
+    height: 100px;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 5;
+    background-image: linear-gradient(
+        
+        130deg,
+        hsl(279, 29%, 49%) 0%,
+        hsl(234deg 34% 55%) 29%,
+        hsl(209deg 48% 50%) 47%,
+        hsl(197deg 62% 45%) 61%,
+        hsl(190deg 50% 46%) 70%,
+        hsl(179deg 29% 50%) 77%,
+        hsl(165deg 34% 53%) 82%,
+        hsl(141deg 33% 58%) 86%,
+        hsl(97deg 35% 60%) 90%,
+        hsl(65deg 42% 57%) 94%,
+        hsl(44deg 71% 62%) 100%
+        );
+}
+
+
+#logoAjudarFazBem {
+    height: 80px;
+    width: auto;
+    border-radius: 50px;
+    margin-left: 100px;
+}
+
+header.header-home nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 100px;
+}
+
+header.header-home .nav-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 10px;
+}
+
+header.header-home .nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-left: 8px;
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+
+header.header-home ul.nav-menu li a:hover {
+    border-bottom: 3px solid #E3BE5B;
+    transition: all 2ms ease-out;
+}
+
+
+/* MAIN */
+
+
+.main-home > div {
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+    z-index: 2; 
+}
+
+.content-page-wrapper {
+    display: flex;
+    color: var(--color-01);
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.main-home .content-page-1 {  
+    background-color: var(--Background-Color-Page);
+    overflow-y: hidden; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; 
+    padding: 20px;
+    z-index: 1; 
+}
+
+.main-home .content-page-2 { top: 100%; background-color: var(--Background-Color-Page-2); max-height: 1200px;}
+.main-home .content-page-3 { top: 200%; background-color: var(--Background-Color-Page-3); max-height: 1200px;}
+.main-home .content-page-4 { top: 300%; background-color: var(--Background-Color-Page-4); max-height: 1200px;}
+
+
+.content-page-wrapper .row {
+    height: 60%;
+    font-size: var(--font-size-Text-Titulo);
+    font-family: var(--font-family-padrao-2); 
+}
+
+.content-page-wrapper .row #col-4-image,
+.content-page-wrapper #col-margin {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.content-page-wrapper #loading-pag {
+    position: absolute;
+    left: 5%;
+
+}
+
+.loading {
+    position:  absolute;
+    left: 5%;
+    margin: 100% 0 0 0;
+    width: 4px;
+    height: 90px;
+    border-radius: 10px;
+    border: 1px solid var(--color-01);
+    background-color: transparent;
+}
+
+.button-doacao {width: 100%; display: flex; justify-content: center; align-items: center; padding: 50px 0 0;}
+.container-col-margin {width: 650px;}
+.content-page-wrapper .container-col-margin .button-doacao button {
+    background-color: transparent;
+    padding: 8px 68px;
+    border-radius: 40px;
+    border: 1px solid var(--color-02);
+    font-family: var(--font-family-padrao-3);
+    font-size: var(--font-size-Text-Subititulo);
+    color: var(--color-01);
+    font-weight: normal;
+}
+
+@media (max-width: 644px) {
+    .w-sm-100 {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+}
+
+.content-page-wrapper .row p{
+    padding: 20px 0;
+    font-size: var(--font-size-Text-Subititulo);
+    font-family: var(--font-family-padrao); 
+    color: var(--font-color-subtitulo); 
+}
+
+
+.content-page-wrapper .col-1,
+.content-page-wrapper .col-2,
+.content-page-wrapper .col-3,
+.content-page-wrapper .col-4,
+.content-page-wrapper .col-5,
+.content-page-wrapper .col-6,
+.content-page-wrapper .col-7,
+.content-page-wrapper .col-8,
+.content-page-wrapper .col-9,
+.content-page-wrapper .col-10,
+.content-page-wrapper .col-11,
+.content-page-wrapper .col-12 {
+    padding: 20px;
+    height: 100%;
+}
+
+#col-margin span:nth-child(1) { color: var(--color-logo-02); }
+#col-margin span:nth-child(2) { color: var(--color-logo-01); }
+
+.icon-whats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 85%;
+    left: 80%;
+    background-color: var(--color-03);
+    width: 75px; height: 75px;
+    border-radius: 100% 35% 100% 100%;
+    z-index: 9999;
+    font-size: 30px;
+    color: #fff;
+}
+
+/* FOOTER */
+
+footer.footer-home {
+    z-index: 5;
+    background-color: whitesmoke;
+    color: #8859a1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 447%;
+    height: 300px;
+}
+
+footer.footer-home img{
+    height: 100px;
+    border-radius: 50px;
+}
+footer.footer-home div.container {
+    width: 100%;
+    display: flex;
+}
+
+footer.footer-home div.container div.pages h5 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer.footer-home div.container div.pages a{
+    font-size: 18px;
+}
+
+footer.footer-home div.container div.social h5 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer.footer-home div.container div.social {
+    height: 10px;
+    width: 10px;
+}
+
+footer.footer-home div.container div.social svg{
+    height: 25px;
+    width: 25px;
+    margin-right: 25px;
+    transition: all 0.2s ease-in-out;
+}
+
+footer.footer-home div.container div.social li:nth-child(1) svg:hover{
+    color: #D62976;
+    margin-bottom: 5px;
+}
+
+footer.footer-home div.container div.social li:nth-child(2) svg:hover{
+    color: #3B5998;
+    margin-bottom: 5px;
+}
+
+footer.footer-home div.container div.social li:nth-child(3) svg:hover{
+    color: #25D366;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 600px) {
+    footer.footer-home {
+
+        top: 450%;
+
+    }
+}
