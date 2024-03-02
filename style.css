@@ -230,7 +230,7 @@ header.header-home ul.nav-menu li a:hover {
     left: 80%;
     background-color: var(--color-03);
     width: 75px; height: 75px;
-    border-radius: 100% 20% 100% 100%;
+    border-radius: 100% 35% 100% 100%;
     z-index: 9999;
     font-size: 30px;
     color: #fff;
