@@ -173,17 +173,25 @@ header.header-home ul.nav-menu li a:hover {
     background-color: transparent;
 }
 
-
-.content-page-wrapper .container-col-margin button {
+.button-doacao {width: 100%; display: flex; justify-content: center; align-items: center; padding: 50px 0 0;}
+.container-col-margin {width: 650px;}
+.content-page-wrapper .container-col-margin .button-doacao button {
     background-color: transparent;
-    padding: 5px 60px;
+    padding: 8px 68px;
     border-radius: 40px;
     border: 1px solid var(--color-02);
     font-family: var(--font-family-padrao-3);
     font-size: var(--font-size-Text-Subititulo);
     color: var(--color-01);
     font-weight: normal;
-    margin: 0 30%;
+}
+
+@media (max-width: 644px) {
+    .w-sm-100 {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
 }
 
 .content-page-wrapper .row p{
@@ -219,7 +227,7 @@ header.header-home ul.nav-menu li a:hover {
     align-items: center;
     position: fixed;
     top: 85%;
-    left: 85%;
+    left: 80%;
     background-color: var(--color-03);
     width: 75px; height: 75px;
     border-radius: 100% 20% 100% 100%;
