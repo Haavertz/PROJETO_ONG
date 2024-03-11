@@ -210,6 +210,13 @@ header .navbar-nav a:hover {
     color: #fff;
 }
 
+.carousel-text {
+    color: white;
+    background-color: #00000080;
+    margin-bottom: 40px;
+    padding: 10px;
+}
+
 /* FOOTER */
 
 footer {
