@@ -173,7 +173,7 @@ header.header-home ul.nav-menu li a:hover {
     font-size: var(--font-size-Text-Titulo);
     color: var(--color-04);
     font-family: var(--font-family-padrao);
-    font-weight: 800;
+    font-weight: 600;
 }
 
 .main-home #page-wrapper-2 {margin-right: 0px; margin-left: 0px; padding-left: 0px; padding-right: 0px;}
@@ -207,9 +207,9 @@ header.header-home ul.nav-menu li a:hover {
 
 
 
-.button-doacao {width: 100%; display: flex; justify-content: center; align-items: center; padding: 50px 0 0;}
+.main-home .button-doacao {width: 100%; display: flex; justify-content: center; align-items: center; padding: 30px 0 0;}
 .container-col-margin {width: 650px;}
-.content-page-wrapper .container-col-margin .button-doacao button {
+.main-home .button-doacao button {
     background-color: transparent;
     padding: 8px 68px;
     border-radius: 40px;
@@ -225,6 +225,7 @@ header.header-home ul.nav-menu li a:hover {
         width: 100%;
         margin-bottom: 30px;
     }
+    .main-home .button-doacao{padding: 0;}
 
 }
 
