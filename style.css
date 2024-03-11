@@ -192,7 +192,6 @@ header.header-home ul.nav-menu li a:hover {
     font-family: var(--font-family-padrao-2); 
 }
 
-.main-home .content-page-wrapper .row #col-4-image,
 .main-home .content-page-wrapper #col-margin {
     display: flex;
     justify-content: center;
