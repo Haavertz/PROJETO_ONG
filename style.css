@@ -130,14 +130,35 @@ header .navbar-nav a:hover {
     margin: 40px 0 25px 0;
 }
 
-@media (max-width: 500px) {
-    .main-home .content-page-2 .title-page h1 {
-        font-size: 45px !important;
+@media (max-width: 571px) {
+    @media (max-width: 500px) {
+        .main-home .content-page-2 .title-page h1 {
+            font-size: 45px !important;
+        }
+        .main-home #page-wrapper-2 h2 {
+            font-size: 20px !important;
+            text-align: justify;
+            padding: 20px 30px 0 30px;        
+        }
     }
-    .main-home #page-wrapper-2 h2 {
-        font-size: 20px !important;
-        text-align: justify;
-        padding: 20px 30px 0 30px;        
+
+    @media (max-width: 400px) {
+        .main-home .container-col-margin h1 {
+            font-size: 20px !important;
+        }
+        .main-home .container-col-margin p {
+            font-size: 15px !important;
+            margin: 0;
+        }
+        .main-home #image-content-home img{
+            width: 100%;
+            height: 170px;
+        }
+    
+        .main-home .button-doacao button {
+            padding: 4px 48px !important;
+            font-size: 15px !important;
+        }
     }
 }
 .main-home .content-2-texting {
