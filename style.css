@@ -44,16 +44,11 @@
 }
 
 /* HEADER */
-header.header-home{
-    position: fixed;
-    height: 100px;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 5;
+#ajudarFazBemLogo {
+    height: 70px;
+}
+
+header .navbar {
     background-image: linear-gradient(
         
         130deg,
@@ -69,45 +64,21 @@ header.header-home{
         hsl(65deg 42% 57%) 94%,
         hsl(44deg 71% 62%) 100%
         );
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    right: 0;
+    top: 0;
 }
 
-
-#logoAjudarFazBem {
-    height: 80px;
-    width: auto;
-    border-radius: 50px;
-    margin-left: 100px;
-}
-
-header.header-home nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 100px;
-}
-
-header.header-home .nav-menu {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 10px;
-}
-
-header.header-home .nav-menu a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    margin-left: 8px;
-    margin-right: 8px;
+header .navbar-nav a {
     font-size: 20px;
+    font-weight: bold;
+    transition: all 0.2s ease;
 }
 
-
-header.header-home ul.nav-menu li a:hover {
-    border-bottom: 3px solid #E3BE5B;
-    transition: all 2ms ease-out;
+header .navbar-nav a:hover {
+    font-size: 21px;
 }
 
 
@@ -147,9 +118,9 @@ header.header-home ul.nav-menu li a:hover {
     z-index: 1; 
 }
 
-.main-home .content-page-2 { top: 100%; background-color: var(--Background-Color-Page-2); max-height: 100vh; overflow-x: hidden;}
-.main-home .content-page-3 { top: 200%; background-color: var(--Background-Color-Page-3); max-height: 100vh; overflow-x: hidden;}
-.main-home .content-page-4 { top: 300%; background-color: var(--Background-Color-Page-4); max-height: 100vh; overflow-x: hidden;}
+.main-home .content-page-2 { top: 100%; background-color: var(--Background-Color-Page-2); max-height: 1200px; width: 100%;}
+.main-home .content-page-3 { top: 200%; background-color: var(--Background-Color-Page-3); max-height: 1200px; width: 100%;}
+.main-home .content-page-4 { top: 290%; background-color: #F5F5F5; height: auto;}
 
 .main-home .title-page {
     display: flex;
@@ -272,66 +243,29 @@ header.header-home ul.nav-menu li a:hover {
 
 /* FOOTER */
 
-footer.footer-home {
-    z-index: 5;
-    background-color: whitesmoke;
-    color: #8859a1;
+footer {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 0;
-    top: 447%;
-    height: 300px;
+    top: 100%;
+    background-color: #F5F5F5;
+    z-index: 99;
 }
-
-footer.footer-home img{
-    height: 100px;
-    border-radius: 50px;
-}
-footer.footer-home div.container {
-    width: 100%;
-    display: flex;
-}
-
-footer.footer-home div.container div.pages h5 {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-footer.footer-home div.container div.pages a{
-    font-size: 18px;
-}
-
-footer.footer-home div.container div.social h5 {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-footer.footer-home div.container div.social {
-    height: 10px;
-    width: 10px;
-}
-
-footer.footer-home div.container div.social svg{
+footer ul li a svg{
     height: 25px;
-    width: 25px;
-    margin-right: 25px;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease;
 }
 
-footer.footer-home div.container div.social li:nth-child(1) svg:hover{
-    color: #D62976;
-    margin-bottom: 5px;
+footer ul li:nth-child(1) a svg:hover{
+    fill: #DD2A7B;
 }
 
-footer.footer-home div.container div.social li:nth-child(2) svg:hover{
-    color: #3B5998;
-    margin-bottom: 5px;
+footer ul li:nth-child(2) a svg:hover{
+    fill: #3B5998;
 }
 
-footer.footer-home div.container div.social li:nth-child(3) svg:hover{
-    color: #25D366;
-    margin-bottom: 5px;
+footer ul li:nth-child(3) a svg:hover{
+    fill: #25D366;
 }
 
 @media (max-width: 600px) {
