@@ -110,11 +110,7 @@ header .navbar-nav a:hover {
 
 .main-home .content-page-2 { top: 100%; background-color: var(--Background-Color-Page-2); max-height: 1200px;}
 .main-home .content-page-3 { top: 200%; background-color: var(--Background-Color-Page-3); max-height: 1200px;}
-.main-home .content-page-4 { 
-    top: 300%;
-    max-height: 100px;
-    background-color: #F5F5F5;
-}
+.main-home .content-page-4 { top: 290%; background-color: #F5F5F5; height: auto;}
 
 
 .content-page-wrapper .row {
@@ -237,12 +233,11 @@ header .navbar-nav a:hover {
 
 /* FOOTER */
 
-
 footer {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 0;
+    top: 100%;
     background-color: #F5F5F5;
     z-index: 99;
 }
