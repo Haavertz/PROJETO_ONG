@@ -41,16 +41,11 @@
 }
 
 /* HEADER */
-header.header-home{
-    position: fixed;
-    height: 100px;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 5;
+#ajudarFazBemLogo {
+    height: 70px;
+}
+
+header .navbar {
     background-image: linear-gradient(
         
         130deg,
@@ -66,45 +61,21 @@ header.header-home{
         hsl(65deg 42% 57%) 94%,
         hsl(44deg 71% 62%) 100%
         );
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    right: 0;
+    top: 0;
 }
 
-
-#logoAjudarFazBem {
-    height: 80px;
-    width: auto;
-    border-radius: 50px;
-    margin-left: 100px;
-}
-
-header.header-home nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 100px;
-}
-
-header.header-home .nav-menu {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 10px;
-}
-
-header.header-home .nav-menu a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    margin-left: 8px;
-    margin-right: 8px;
+header .navbar-nav a {
     font-size: 20px;
+    font-weight: bold;
+    transition: all 0.2s ease;
 }
 
-
-header.header-home ul.nav-menu li a:hover {
-    border-bottom: 3px solid #E3BE5B;
-    transition: all 2ms ease-out;
+header .navbar-nav a:hover {
+    font-size: 21px;
 }
 
 
