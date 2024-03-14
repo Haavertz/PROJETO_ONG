@@ -113,6 +113,7 @@ header .navbar-nav a:hover {
     top: 0;
     left: 0;
     width: 100%;
+    margin-top: 110px;
     padding: 20px;
     z-index: 1; 
 }
@@ -150,20 +151,20 @@ header .navbar-nav a:hover {
     
         @media (max-width: 400px) {
             .main-home .container-col-margin h1 {
-                font-size: 20px !important;
+                font-size: 25px !important;
             }
             .main-home .container-col-margin p {
-                font-size: 15px !important;
-                margin: 0;
+                font-size: 20px !important;
             }
             .main-home #image-content-home img{
                 width: 100%;
                 height: 170px;
+                margin: 30px 0 0 0 ;
             }
         
             .main-home .button-doacao button {
-                padding: 4px 48px !important;
-                font-size: 15px !important;
+                padding: 6px 56px !important;
+                font-size: 18px !important;
             }
         }
     }
