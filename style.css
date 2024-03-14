@@ -199,11 +199,15 @@ header .navbar-nav a:hover {
 }
 
 .main-home #col-4-image .col-6 img{
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.300);
+    border: 1px solid #fff;
     width: 100%;
     height: 100%;
 }
 
 .main-home #col-4-image .col-12 img{
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.300);
+    border: 1px solid #fff;
     width: 100%;
     height: 100%;
 }
