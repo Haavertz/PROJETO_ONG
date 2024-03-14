@@ -134,8 +134,7 @@ header .navbar-nav a:hover {
     margin: 40px 0 25px 0;
 }
 @media (max-width: 850px) {
-    
-    .main-home #col-4-image .col-6 {display: none;}
+    .main-home #col-4-image .col-6, .main-home #agua-page-2 {display: none;}
 
     @media (max-width: 571px) {
         @media (max-width: 500px) {
