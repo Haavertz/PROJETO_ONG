@@ -97,8 +97,8 @@ header .navbar-nav a:hover {
     color: var(--color-01);
     justify-content: center;
     align-items: center;
-    height: 100vh; 
 }
+
 .main-home .content-page-wrapper-2 {
     display: flex;
     color: var(--color-01);
@@ -113,14 +113,17 @@ header .navbar-nav a:hover {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh; 
     padding: 20px;
     z-index: 1; 
 }
 
-.main-home .content-page-2 { top: 100%; background-color: var(--Background-Color-Page-2); max-height: 1200px; width: 100%;}
-.main-home .content-page-3 { top: 200%; background-color: var(--Background-Color-Page-3); max-height: 1200px; width: 100%;}
+.main-home .content-page-2 { top: 100%; background-color: var(--Background-Color-Page-2); overflow-y: auto; width: 100%;}
+.main-home .content-page-3 { top: 200%; background-color: var(--Background-Color-Page-3); width: 100%;}
 .main-home .content-page-4 { top: 290%; background-color: #F5F5F5; height: auto;}
+.main-home .content-page-1::-webkit-scrollbar {display: none;}
+.main-home .content-page-2::-webkit-scrollbar {display: none;}
+.main-home .content-page-3::-webkit-scrollbar {display: none;}
+
 
 .main-home .title-page {
     display: flex;
@@ -129,39 +132,45 @@ header .navbar-nav a:hover {
     width: 100%;
     margin: 40px 0 25px 0;
 }
+@media (max-width: 850px) {
+    
+    .main-home #col-4-image .col-6 {display: none;}
 
-@media (max-width: 571px) {
-    @media (max-width: 500px) {
-        .main-home .content-page-2 .title-page h1 {
-            font-size: 45px !important;
-        }
-        .main-home #page-wrapper-2 h2 {
-            font-size: 20px !important;
-            text-align: justify;
-            padding: 20px 30px 0 30px;        
-        }
-    }
-
-    @media (max-width: 400px) {
-        .main-home .container-col-margin h1 {
-            font-size: 20px !important;
-        }
-        .main-home .container-col-margin p {
-            font-size: 15px !important;
-            margin: 0;
-        }
-        .main-home #image-content-home img{
-            width: 100%;
-            height: 170px;
+    @media (max-width: 571px) {
+        @media (max-width: 500px) {
+            .main-home .content-page-2 .title-page h1 {
+                font-size: 45px !important;
+            }
+            .main-home #page-wrapper-2 h2 {
+                font-size: 20px !important;
+                text-align: justify;
+                padding: 20px 30px 0 30px;        
+            }
         }
     
-        .main-home .button-doacao button {
-            padding: 4px 48px !important;
-            font-size: 15px !important;
+        @media (max-width: 400px) {
+            .main-home .container-col-margin h1 {
+                font-size: 20px !important;
+            }
+            .main-home .container-col-margin p {
+                font-size: 15px !important;
+                margin: 0;
+            }
+            .main-home #image-content-home img{
+                width: 100%;
+                height: 170px;
+            }
+        
+            .main-home .button-doacao button {
+                padding: 4px 48px !important;
+                font-size: 15px !important;
+            }
         }
     }
 }
+
 .main-home .content-2-texting {
+    text-align: justify;
     font-size: var(--font-size-Text-Titulo);
     color: var(--color-04);
     font-family: var(--font-family-padrao);
@@ -169,7 +178,7 @@ header .navbar-nav a:hover {
 }
 
 .main-home #page-wrapper-2 {margin-right: 0px; margin-left: 0px; padding-left: 0px; padding-right: 0px;}
-
+.main-home #image-content-home img {border-radius: 15px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.346);}
 .main-home .title-page h1 {
     font-size: var(--font-size-Titulo);
     color: var(--color-04);
@@ -177,6 +186,28 @@ header .navbar-nav a:hover {
     font-weight: bold;
 
 }
+
+
+.main-home #col-4-image .col-6 {
+    height: 200px;
+}
+
+.main-home #col-4-image .col-12 {
+    width: 100%;
+    height: 250px;
+}
+
+.main-home #col-4-image .col-6 img{
+    width: 100%;
+    height: 100%;
+}
+
+.main-home #col-4-image .col-12 img{
+    width: 100%;
+    height: 100%;
+}
+
+
 
 .main-home .content-page-wrapper .row {
     height: 60%;
@@ -199,7 +230,7 @@ header .navbar-nav a:hover {
 
 
 .main-home .button-doacao {width: 100%; display: flex; justify-content: center; align-items: center; padding: 30px 0 0;}
-.container-col-margin {width: 650px;}
+.container-col-margin {width: 550px;}
 .main-home .button-doacao button {
     background-color: transparent;
     padding: 8px 68px;
@@ -225,23 +256,6 @@ header .navbar-nav a:hover {
     font-size: var(--font-size-Text-Subititulo);
     font-family: var(--font-family-padrao); 
     color: var(--font-color-subtitulo); 
-}
-
-
-.content-page-wrapper .col-1,
-.content-page-wrapper .col-2,
-.content-page-wrapper .col-3,
-.content-page-wrapper .col-4,
-.content-page-wrapper .col-5,
-.content-page-wrapper .col-6,
-.content-page-wrapper .col-7,
-.content-page-wrapper .col-8,
-.content-page-wrapper .col-9,
-.content-page-wrapper .col-10,
-.content-page-wrapper .col-11,
-.content-page-wrapper .col-12 {
-    padding: 20px;
-    height: 100%;
 }
 
 #col-margin span:nth-child(1) { color: var(--color-logo-02); }
@@ -291,8 +305,6 @@ footer ul li:nth-child(3) a svg:hover{
 
 @media (max-width: 600px) {
     footer.footer-home {
-
         top: 450%;
-
     }
 }
