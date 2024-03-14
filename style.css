@@ -228,7 +228,14 @@ header .navbar-nav a:hover {
 
 }
 
-
+.main-home #agua-page-2 {
+    position: absolute;
+    left: 80%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+}
 
 .main-home .button-doacao {width: 100%; display: flex; justify-content: center; align-items: center; padding: 30px 0 0;}
 .container-col-margin {width: 550px;}
