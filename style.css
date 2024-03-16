@@ -134,9 +134,11 @@ header .navbar-nav a:hover {
     width: 100%;
     margin: 40px 0 25px 0;
 }
+
 @media (max-width: 850px) {
     .main-home #col-4-image .col-6, .main-home #agua-page-2 {display: none;}
     .main-home .content-page-1 {margin-top: 110px;}
+    
 
     @media (max-width: 571px) {
         @media (max-width: 500px) {
@@ -189,7 +191,6 @@ header .navbar-nav a:hover {
 
 }
 
-
 .main-home #col-4-image .col-6 {
     height: 200px;
 }
@@ -209,13 +210,13 @@ header .navbar-nav a:hover {
 .main-home #col-4-image .col-12 img{
     box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.300);
     border: 1px solid #fff;
-    width: 100%;
-    height: 100%;
+    border-radius: 15px;
+    width: 500px;
+    height: 333px;
 }
 
-
-
 .main-home .content-page-wrapper .row {
+    width: 100%;
     height: 60%;
     font-size: var(--font-size-Text-Titulo);
     font-family: var(--font-family-padrao-2); 
@@ -253,15 +254,6 @@ header .navbar-nav a:hover {
     font-size: var(--font-size-Text-Subititulo);
     color: var(--color-01);
     font-weight: normal;
-}
-
-@media (max-width: 644px) {
-    .w-sm-100 {
-        width: 100%;
-        margin-bottom: 30px;
-    }
-    .main-home .button-doacao{padding: 0;}
-
 }
 
 .content-page-wrapper .row p{
