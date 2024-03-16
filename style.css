@@ -157,14 +157,16 @@ header .navbar-nav a:hover {
                 font-size: 25px !important;
             }
             .main-home .container-col-margin p {
-                font-size: 20px !important;
+                font-size: 16px !important;
+                margin: 0;
             }
             .main-home #image-content-home img{
                 width: 100%;
                 height: 170px;
                 margin: 30px 0 0 0 ;
             }
-        
+
+            .main-home .button-doacao {padding: 0;}
             .main-home .button-doacao button {
                 padding: 6px 56px !important;
                 font-size: 18px !important;
@@ -237,13 +239,13 @@ header .navbar-nav a:hover {
 .main-home #agua-page-2 {
     position: absolute;
     left: 80%;
-    top: 8%;
+    top: 7%;
     transform: translate(-50%, -50%);
     width: 200px;
     height: 200px;
 }
 
-.main-home .button-doacao {width: 100%; display: flex; justify-content: center; align-items: center; padding: 30px 0 0;}
+.main-home .button-doacao {width: 100%; display: flex; justify-content: center; align-items: center;}
 .container-col-margin {width: 550px;}
 .main-home .button-doacao button {
     background-color: transparent;
