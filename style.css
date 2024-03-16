@@ -114,7 +114,7 @@ header .navbar-nav a:hover {
     top: 0;
     left: 0;
     width: 100%;
-    margin-top: 110px;
+    margin-top: 180px;
     padding: 20px;
     z-index: 1; 
 }
@@ -136,6 +136,7 @@ header .navbar-nav a:hover {
 }
 @media (max-width: 850px) {
     .main-home #col-4-image .col-6, .main-home #agua-page-2 {display: none;}
+    .main-home .content-page-1 {margin-top: 110px;}
 
     @media (max-width: 571px) {
         @media (max-width: 500px) {
@@ -235,7 +236,7 @@ header .navbar-nav a:hover {
 .main-home #agua-page-2 {
     position: absolute;
     left: 80%;
-    top: 10%;
+    top: 8%;
     transform: translate(-50%, -50%);
     width: 200px;
     height: 200px;
