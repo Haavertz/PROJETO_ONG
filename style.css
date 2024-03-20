@@ -120,7 +120,7 @@ header .navbar-nav a:hover {
 
 .main-home .content-page-2 { top: 100%; background-color: var(--Background-Color-Page-2); overflow-y: auto; width: 100%;}
 .main-home .content-page-3 { top: 200%; background-color: var(--Background-Color-Page-3); width: 100%;}
-.main-home .content-page-4 { top: 290%; background-color: #F5F5F5; height: auto;}
+.main-home .content-page-4 { top: 295%; background-color: #F5F5F5; height: auto;}
 .main-home .content-page-1::-webkit-scrollbar {display: none;}
 .main-home .content-page-2::-webkit-scrollbar {display: none;}
 .main-home .content-page-3::-webkit-scrollbar {display: none;}
@@ -142,6 +142,9 @@ header .navbar-nav a:hover {
     @media (max-width: 571px) {
         @media (max-width: 500px) {
             .main-home .content-page-2 .title-page h1 {
+                font-size: 45px !important;
+            }
+            .main-home .content-page-3 .title-page h1 {
                 font-size: 45px !important;
             }
             .main-home #page-wrapper-2 h2 {
@@ -299,6 +302,27 @@ header .navbar-nav a:hover {
         margin-top: 80px;
     }
 } 
+@media (max-width: 900px) {
+    .natalImg2 {
+        display: none;
+    }
+} 
+@media (max-width: 800px) {
+    .lanchinhoImg2, .invernoImg2{
+        display: none;
+    }
+} 
+@media (max-width: 990px) {
+    .cestaImg3 {
+        display: none;
+    }
+} 
+
+@media (max-width: 600px) {
+    .cestaImg1 {
+        display: none;
+    }
+} 
 
 .carousel-text {
     color: white;
@@ -342,7 +366,7 @@ footer ul li:nth-child(3) a svg:hover{
 }
 
 @media (max-width: 600px) {
-    footer.footer-home {
-        top: 450%;
+    .main-home .content-page-4{
+        top: 280%;
     }
 }
