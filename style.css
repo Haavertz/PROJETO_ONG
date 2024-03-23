@@ -22,7 +22,7 @@
 
     --Background-Color-Page: #fff;
     --Background-Color-Page-2: #9715C5;
-    --Background-Color-Page-3: #15BE5D;
+    --Background-Color-Page-3: #D22D7E;
     --Background-Color-Page-4: #F77260;
     --Background-Color-Page-4: #1C69DD;
 
@@ -82,7 +82,6 @@ header .navbar-nav a:hover {
     font-size: 21px;
 }
 
-
 /* MAIN */
 
 
@@ -121,7 +120,7 @@ header .navbar-nav a:hover {
 
 .main-home .content-page-2 { top: 100%; background-color: var(--Background-Color-Page-2); overflow-y: auto; width: 100%;}
 .main-home .content-page-3 { top: 200%; background-color: var(--Background-Color-Page-3); width: 100%;}
-.main-home .content-page-4 { top: 290%; background-color: #F5F5F5; height: auto;}
+.main-home .content-page-4 { top: 295%; background-color: #F5F5F5; height: auto;}
 .main-home .content-page-1::-webkit-scrollbar {display: none;}
 .main-home .content-page-2::-webkit-scrollbar {display: none;}
 .main-home .content-page-3::-webkit-scrollbar {display: none;}
@@ -143,6 +142,9 @@ header .navbar-nav a:hover {
     @media (max-width: 571px) {
         @media (max-width: 500px) {
             .main-home .content-page-2 .title-page h1 {
+                font-size: 45px !important;
+            }
+            .main-home .content-page-3 .title-page h1 {
                 font-size: 45px !important;
             }
             .main-home #page-wrapper-2 h2 {
@@ -283,6 +285,59 @@ header .navbar-nav a:hover {
     color: #fff;
 }
 
+.carousel-item img{
+    border: 2px white solid;
+}
+
+@media (max-width: 668px) {
+    .carousel-item img.pascoa-2{
+        display: none;
+    }
+    .content-page-4 {
+        margin-top: 50px;
+    }
+} 
+@media (max-width: 550px) {
+    .content-page-4 {
+        margin-top: 80px;
+    }
+} 
+@media (max-width: 900px) {
+    .natalImg2 {
+        display: none;
+    }
+} 
+@media (max-width: 800px) {
+    .lanchinhoImg2, .invernoImg2{
+        display: none;
+    }
+} 
+@media (max-width: 990px) {
+    .cestaImg3 {
+        display: none;
+    }
+} 
+
+@media (max-width: 600px) {
+    .cestaImg1 {
+        display: none;
+    }
+} 
+
+.carousel-text {
+    color: white;
+    background-color: #00000080;
+    margin-bottom: 40px;
+    padding: 10px;
+    /* From https://css.glass */
+    background: rgba(0, 0, 0, 0.44);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.6px);
+    -webkit-backdrop-filter: blur(11.6px);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
 /* FOOTER */
 
 footer {
@@ -311,7 +366,7 @@ footer ul li:nth-child(3) a svg:hover{
 }
 
 @media (max-width: 600px) {
-    footer.footer-home {
-        top: 450%;
+    .main-home .content-page-4{
+        top: 280%;
     }
 }
