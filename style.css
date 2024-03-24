@@ -120,7 +120,8 @@ header .navbar-nav a:hover {
 
 .main-home .content-page-2 { top: 100%; background-color: var(--Background-Color-Page-2); overflow-y: auto; width: 100%;}
 .main-home .content-page-3 { top: 200%; background-color: var(--Background-Color-Page-3); width: 100%;}
-.main-home .content-page-4 { top: 295%; background-color: #F5F5F5; height: auto;}
+.main-home .content-page-4 { top: 300%; background-color: var(--Background-Color-Page-4); width: 100%;}
+.main-home .content-page-5 { top: 395%; background-color: #F5F5F5; height: auto;}
 .main-home .content-page-1::-webkit-scrollbar {display: none;}
 .main-home .content-page-2::-webkit-scrollbar {display: none;}
 .main-home .content-page-3::-webkit-scrollbar {display: none;}
@@ -337,6 +338,31 @@ header .navbar-nav a:hover {
     -webkit-backdrop-filter: blur(11.6px);
     border: 1px solid rgba(0, 0, 0, 0.06);
 }
+
+/*Insta*/
+
+.card-img-overlay h5{
+    display: none;
+}
+.card-img-overlay {
+    transition: all 2s linear;
+    translate: 0 10%;
+
+}
+.card-img {
+    transition: all 0.5s linear;
+}
+.card-link:hover .card-img{
+    filter: brightness(70%);
+}
+.card-link:hover .card-img-overlay h5{
+    display: block;
+}
+.card-link:hover .card-img-overlay {
+    translate: 0 0;
+
+}
+
 
 /* FOOTER */
 
