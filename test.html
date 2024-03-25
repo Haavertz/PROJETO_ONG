@@ -24,16 +24,18 @@
         <div class="container">
             <div id="instafeed" class="d-flex row"></div>
             
+            
         </div>
     </div>
     <script type="text/javascript" src="./instafeed.min.js"></script>
 
     <script type="text/javascript">
         var feed = new Instafeed({
-        accessToken: 'IGQWRPNFVVRHFRcnI1UlJyaDd1RE4tdEhaX0F3MGZA0NjU4X2pmS1c4RWlEdzI1RnJRWmhQdHBsZA2FNYVUyUEVQWXN2bEZAJRURTY242dG9UNFFUOHV6eFRoSjE3ejFxZA0oyNzdYZAXZAZAdm9JVmdkQ2F1OWZA5clczRTQZD',
-        template: ('<a href="{{link}}" target="_blank" class="card-link col-md-5 col-sm-12 col-lg-3"><div class="card text-bg-dark border-0 shadow-lg my-3"><img src="{{image}}" class="card-img" alt="{{caption}}"><div class="card-img-overlay"><h5 class="card-title">{{caption}}</h5></div></div></a>')
+            accessToken: 'IGQWRQSmZAwaGROSmt3ZAE1mRmhHeGRXcHd2R0NCbEdCT21GalpweTVlUGRma2FKNVZAodHB5RXJOZAnBRSkpiRlhHSVRyaWxESVpQWjZApWVZAVOUY1WUxfMVMxNnNkdEJPU3FWdTI4TnNWSGFCS2kxM2lybXNGTHMxTDQZD',
+            template: ('<a href="{{link}}" target="_blank" class="card-link col-md-5 col-sm-12 col-lg-3"><div class="card text-bg-dark border-0 shadow-lg my-3"><img src="{{image}}" class="card-img img-fluid" alt="{{caption}}"><video src="{{video}}"></video><div class="card-img-overlay"><h5 class="card-title">{{caption}}</h5></div></div></a>'),
+            limit: null,
         });
         feed.run();
-    </script>
+</script>
 </body>
 </html>
