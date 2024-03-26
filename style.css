@@ -120,11 +120,13 @@ header .navbar-nav a:hover {
 
 .main-home .content-page-2 { top: 100%; background-color: var(--Background-Color-Page-2); overflow-y: auto; width: 100%;}
 .main-home .content-page-3 { top: 200%; background-color: var(--Background-Color-Page-3); width: 100%;}
-.main-home .content-page-4 { top: 300%; background-color: var(--Background-Color-Page-4); width: 100%;}
-.main-home .content-page-5 { top: 395%; background-color: #F5F5F5; height: auto;}
+.main-home .content-page-4 { top: 300%; background-color: var(--Background-Color-Page-4); width: 100%; height: auto;}
+.main-home .content-page-5 { top: 450%; background-color: #F5F5F5; height: auto;}
 .main-home .content-page-1::-webkit-scrollbar {display: none;}
 .main-home .content-page-2::-webkit-scrollbar {display: none;}
 .main-home .content-page-3::-webkit-scrollbar {display: none;}
+.main-home .content-page-4::-webkit-scrollbar {display: none;}
+.main-home .content-page-5::-webkit-scrollbar {display: none;}
 
 
 .main-home .title-page {
@@ -340,29 +342,27 @@ header .navbar-nav a:hover {
 }
 
 /*Insta*/
+.card-text {
+    display: -webkit-box;
+   -webkit-line-clamp: 2;
+   overflow: hidden;
+   -webkit-box-orient: vertical; 
+   text-decoration: none;
+ }
 
-.card-img-overlay h5{
-    display: none;
+.card-link {
+    text-decoration:none;
 }
-.card-img-overlay {
-    transition: all 2s linear;
-    translate: 0 10%;
 
-}
 .card-img {
+    height: 300px; 
+    object-fit: cover;
     transition: all 0.5s linear;
 }
-.card-link:hover .card-img{
-    filter: brightness(70%);
+.card-img:hover {
+    width: 300px;
+    filter: brightness(80%);
 }
-.card-link:hover .card-img-overlay h5{
-    display: block;
-}
-.card-link:hover .card-img-overlay {
-    translate: 0 0;
-
-}
-
 
 /* FOOTER */
 

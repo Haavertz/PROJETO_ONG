@@ -245,10 +245,17 @@
             </div>
 
         </div>
-        <div class="content-page-4">
-            <div class="container-fluid">
-                <div class="container d-flex justify-content-center align-items-center">
-                    <iframe id="frame" src="https://www.instagram.com/pedro_3ds/embed"></iframe>
+        <div class="content-page-4 container-fluid">
+            <div class="container">
+                <div class="row text-center text-light title-page d-flex justify-content-center">
+                    <h1>Nosso Instagram</h1>
+                </div>
+                <div class="album py-5">
+                    <div class="container ">
+                        
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 " id="instafeed">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -298,5 +305,31 @@
         </a>
     </div>
 
+    <script type="text/javascript" src="./instafeed.min.js"></script>
+
+    <script type="text/javascript">
+        var feed = new Instafeed({
+            accessToken: 'IGQWRQSmZAwaGROSmt3ZAE1mRmhHeGRXcHd2R0NCbEdCT21GalpweTVlUGRma2FKNVZAodHB5RXJOZAnBRSkpiRlhHSVRyaWxESVpQWjZApWVZAVOUY1WUxfMVMxNnNkdEJPU3FWdTI4TnNWSGFCS2kxM2lybXNGTHMxTDQZD',
+            template: (`
+            <a href="{{link}}" target="_blank" class="card-link col-md-5 col-sm-12 col-lg-3">
+                <div class="col">
+                <div class="card shadow-sm d-flex align-items-center justify-content-center">
+                    <div class="card-header d-flex my-0 w-100">
+                        <img src="./image/AjudarFazBemLogo.jpg" alt="" class="rounded-circle me-2 my-0" style="height: 30px;">
+                        <p style="font-weight: bold;" class="my-0">{{username}}</p>
+                    </div>
+                    <img src="{{image}}" class="card-img img-fluid border-0 rounded-0" alt="{{caption}}" style="">
+                    <div class="card-body">
+                        <p class="card-text">{{caption}}</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+            `),
+            limit: 8,
+            resolution: 'standard_resolution',
+        });
+        feed.run();
+    </script>
 </body>
 </html>
